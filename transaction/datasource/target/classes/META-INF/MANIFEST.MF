@@ -1,0 +1,16 @@
+Manifest-Version: 1.0
+Built-By: Henrique
+Build-Jdk: 1.6.0_45
+Bundle-Version: 1.0.0
+Tool: Bnd-1.43.0
+Bundle-Name: Datasource Bundle
+Bnd-LastModified: 1372269463552
+Created-By: Apache Maven Bundle Plugin
+Bundle-ManifestVersion: 2
+Bundle-SymbolicName: com.fuse.transaction.examles.datasource
+Import-Package: javax.sql,org.osgi.service.blueprint;version="[1.0.0,2
+ .0.0)"
+Export-Service: javax.sql.DataSource;osgi.jndi.service.name="jdbc/test
+ db";datasource=testdb,javax.sql.XADataSource;osgi.jndi.service.name="
+ jdbc/testXA";datasource=testXA
+
