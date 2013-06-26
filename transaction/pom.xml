@@ -12,6 +12,7 @@
 	<modules>
         <module>datasource</module>
         <module>dao-jta</module>
+        <module>camelroutes</module>
 	</modules>
 	
 	<properties>
