@@ -1,0 +1,67 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+
+	<modelVersion>4.0.0</modelVersion>
+
+	<parent>
+		<groupId>com.fuse.transaction</groupId>
+		<artifactId>transaction</artifactId>
+		<version>1.0</version>
+	</parent>
+
+	<groupId>com.fuse.transaction.examles</groupId>
+	<artifactId>dao-jta</artifactId>
+	<name>DAO-JTA Bundle</name>
+	<packaging>bundle</packaging>
+
+	<properties>
+		<osgi-import-pkg>
+			javax.persistence;resolution:=optional;version="[1.1.0,2.1.0)",
+			javax.persistence.criteria;resolution:=optional;version="[1.1.0,2.1.0)",
+			javax.persistence.metamodel;resolution:=optional;version="[1.1.0,2.1.0)",
+			javax.persistence.spi;resolution:=optional;version="[1.1.0,2.1.0)",
+			javax.sql;resolution:=optional,
+			javax.transaction;resolution:=optional;version=1.1,
+			org.apache.log4j,
+			org.apache.openjpa.conf;resolution:=optional;version="[2.0,3.0)",
+			org.apache.openjpa.enhance;version=2.1,
+			org.apache.openjpa.persistence;resolution:=optional;version="[2.0,3.0)",
+			org.apache.openjpa.persistence.criteria;resolution:=optional;version="[2.0,3.0)",
+			org.apache.openjpa.persistence.query;resolution:=optional;version="[2.0,3.0)",
+			org.apache.openjpa.util;version=2.1,
+			org.h2;resolution:=optional,
+			serp.util,
+			*
+		</osgi-import-pkg>
+		<osgi-export-pkg></osgi-export-pkg>
+		<osgi-private-pkg></osgi-private-pkg>
+		<osgi-dynamic-pkg />
+	</properties>
+
+	<dependencies>
+		<!-- Commons -->
+		<dependency>
+			<groupId>commons-lang</groupId>
+			<artifactId>commons-lang</artifactId>
+			<version>2.6</version>
+		</dependency>
+		<dependency>
+			<groupId>commons-logging</groupId>
+			<artifactId>commons-logging</artifactId>
+			<version>${commons-logging-version}</version>
+		</dependency>
+		<!-- OpenJPA -->
+		<dependency>
+			<groupId>org.apache.openjpa</groupId>
+			<artifactId>openjpa</artifactId>
+			<version>${openjpa-version}</version>
+			<scope>compile</scope>
+		</dependency>
+		<!-- Log4J -->
+		<dependency>
+			<groupId>log4j</groupId>
+			<artifactId>log4j</artifactId>
+			<version>${log4j-version}</version>
+		</dependency>
+	</dependencies>
+</project>

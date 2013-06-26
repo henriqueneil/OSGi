@@ -1,0 +1,8 @@
+<blueprint xmlns="http://www.osgi.org/xmlns/blueprint/v1.0.0"
+	xmlns:tx="http://aries.apache.org/xmlns/transactions/v1.1.0">
+
+	<tx:transaction bean="messageDao" value="Required" method="*" />
+	<bean id="messageDao" class="com.fuse.osgi.daojta.dao.impl.MessageDAOImpl" />
+	
+	<service interface="com.fuse.osgi.daojta.dao.MessageDAO" ref="messageDao" />
+</blueprint>
