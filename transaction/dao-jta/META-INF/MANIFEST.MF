@@ -1,0 +1,9 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: dao-jta
+Bundle-SymbolicName: dao-jta
+Bundle-Version: 1.0.0.qualifier
+Export-Package: com.fuse.osgi.daojta.dao,
+ com.fuse.osgi.daojta.dao.impl,
+ com.fuse.osgi.daojta.model.entities
+Bundle-RequiredExecutionEnvironment: JavaSE-1.6

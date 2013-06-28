@@ -1,10 +1,10 @@
 Manifest-Version: 1.0
-Built-By: Henrique
+Built-By: HNeil
 Build-Jdk: 1.6.0_45
 Bundle-Version: 1.0.0
 Tool: Bnd-1.43.0
 Bundle-Name: Datasource Bundle
-Bnd-LastModified: 1372276306782
+Bnd-LastModified: 1372338304926
 Created-By: Apache Maven Bundle Plugin
 Bundle-ManifestVersion: 2
 Bundle-SymbolicName: com.fuse.transaction.examles.datasource

@@ -6,7 +6,9 @@ public class MyRoute extends RouteBuilder {
 
 	@Override
 	public void configure() throws Exception {
-		from("start").onException(Exception.class).transacted().convertBodyTo(String.class).to("");
+		from("direct:start")
+			.onException(Exception.class)
+			.transacted()
+			.convertBodyTo(String.class).to("direct:stop");
 	}
-
 }
